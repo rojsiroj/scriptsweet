@@ -101,9 +101,9 @@ export function InteractiveSandbox() {
           <button
             key={recipe.id}
             onClick={() => selectRecipe(recipe)}
-            className={\`px-4 py-3 flex items-center gap-2 font-bold text-sm whitespace-nowrap border-r-2 border-[#2A5C6A] transition-colors \${
+            className={`px-4 py-3 flex items-center gap-2 font-bold text-sm whitespace-nowrap border-r-2 border-[#2A5C6A] transition-colors ${
               activeRecipe.id === recipe.id ? 'bg-white text-[#2A5C6A]' : 'hover:bg-[#ffe66d] text-[#2A5C6A]/70'
-            }\`}
+            }`}
           >
             {recipe.title}
           </button>
@@ -134,7 +134,7 @@ export function InteractiveSandbox() {
                 const isComment = line.trim().startsWith('#');
                 const isKeyword = line.includes('import') || line.includes('as ');
                 return (
-                  <div key={i} className={\`\${isComment ? 'text-[#a1c4ce] italic' : isKeyword ? 'text-[#F472B6]' : 'text-white'}\`}>
+                  <div key={i} className={`${isComment ? 'text-[#a1c4ce] italic' : isKeyword ? 'text-[#F472B6]' : 'text-white'}`}>
                     {line || ' '}
                   </div>
                 );
@@ -161,7 +161,7 @@ export function InteractiveSandbox() {
       </div>
 
       {/* Output Drawer */}
-      <div className={\`bg-white border-t-2 border-[#2A5C6A] px-6 transition-all duration-500 ease-in-out \${showOutput ? 'max-h-40 py-4' : 'max-h-0 overflow-hidden py-0'}\`}>
+      <div className={`bg-white border-t-2 border-[#2A5C6A] px-6 transition-all duration-500 ease-in-out ${showOutput ? 'max-h-40 py-4' : 'max-h-0 overflow-hidden py-0'}`}>
         <div className="flex gap-3 items-center text-[#2A5C6A] font-bold bg-[#FAF8F5] border-2 border-[#2A5C6A] border-dashed p-3 rounded-lg">
           <ChevronRight className="w-5 h-5 text-[#EE76AE]" />
           {activeRecipe.output}

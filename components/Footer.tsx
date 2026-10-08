@@ -36,7 +36,7 @@ export function Footer() {
         </div>
         
         <div className="pt-8 border-t-2 border-[#2A5C6A] flex flex-col md:flex-row items-center justify-between gap-4 text-sm font-bold text-[#2A5C6A]/60">
-          <p>© {new Date().getFullYear()} Scriptsweet.net. All rights reserved.</p>
+          <p>© 2026 Scriptsweet.net. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-[#2A5C6A] transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-[#2A5C6A] transition-colors">Terms of Service</Link>

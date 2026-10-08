@@ -9,7 +9,7 @@ const TASTE_RECIPES = [
     title: 'Rename 100 invoices',
     icon: FileText,
     color: '#D8F3DC',
-    desc: 'Add today\\'s date to every PDF in a folder.',
+    desc: "Add today's date to every PDF in a folder.",
     code: `import sweet as ss
 
 invoices = ss.get_files('~/invoices', ext='pdf')
@@ -44,7 +44,7 @@ archive.copy_to('/Volumes/BackupDrive')`
     id: 'csv',
     title: 'CSV to Markdown',
     icon: Table2,
-    color: '#e0fbfc', // Ice blue pastel
+    color: '#e0fbfc',
     desc: 'Convert spreadsheet data into a readable table.',
     code: `import sweet as ss
 
@@ -65,7 +65,7 @@ export function TasteTester() {
           className="relative perspective-1000 group cursor-pointer"
           onClick={() => setActiveCard(activeCard === recipe.id ? null : recipe.id)}
         >
-          <div className={\`w-full h-full min-h-[160px] bg-white border-2 border-[#2A5C6A] rounded-xl shadow-[4px_4px_0px_#2A5C6A] p-6 transition-all duration-300 transform group-hover:-translate-y-1 group-hover:shadow-[6px_6px_0px_#2A5C6A] flex flex-col justify-center \${activeCard === recipe.id ? 'hidden' : 'block'}\`}>
+          <div className={`w-full h-full min-h-[160px] bg-white border-2 border-[#2A5C6A] rounded-xl shadow-[4px_4px_0px_#2A5C6A] p-6 transition-all duration-300 transform group-hover:-translate-y-1 group-hover:shadow-[6px_6px_0px_#2A5C6A] flex flex-col justify-center ${activeCard === recipe.id ? 'hidden' : 'block'}`}>
             <div className="flex items-center gap-4 mb-3">
               <div className="p-3 rounded-lg border-2 border-[#2A5C6A]" style={{ backgroundColor: recipe.color }}>
                 <recipe.icon className="w-6 h-6 text-[#2A5C6A]" />
@@ -78,14 +78,14 @@ export function TasteTester() {
             </div>
           </div>
 
-          <div className={\`w-full h-full min-h-[160px] bg-[#2A5C6A] border-2 border-[#2A5C6A] rounded-xl shadow-[4px_4px_0px_#2A5C6A] p-5 transition-all duration-300 \${activeCard === recipe.id ? 'block' : 'hidden'}\`}>
+          <div className={`w-full h-full min-h-[160px] bg-[#2A5C6A] border-2 border-[#2A5C6A] rounded-xl shadow-[4px_4px_0px_#2A5C6A] p-5 transition-all duration-300 ${activeCard === recipe.id ? 'block' : 'hidden'}`}>
             <div className="flex justify-between items-center mb-3">
               <span className="text-[#EE76AE] font-bold text-sm font-heading">{recipe.title} Script</span>
               <span className="text-white/50 text-xs cursor-pointer hover:text-white transition-colors">Close ✕</span>
             </div>
             <pre className="font-mono text-sm leading-relaxed text-white whitespace-pre-wrap break-words">
               <code>
-                {recipe.code.split('\\n').map((line, i) => (
+                {recipe.code.split('\n').map((line, i) => (
                   <div key={i}>
                     {line.includes('import') || line.includes('for ') || line.includes('in ') ? (
                       <span className="text-[#EE76AE]">{line}</span>

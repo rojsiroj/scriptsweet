@@ -34,7 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={\`\${fredoka.variable} \${plusJakartaSans.variable} \${jetbrainsMono.variable} font-body bg-[#FAF8F5] text-[#2A5C6A] antialiased selection:bg-[#F472B6] selection:text-white\`}>
+      <body className={`${fredoka.variable} ${plusJakartaSans.variable} ${jetbrainsMono.variable} font-body bg-[#FAF8F5] text-[#2A5C6A] antialiased selection:bg-[#F472B6] selection:text-white`}>
         <Navbar />
         {children}
         <Footer />
