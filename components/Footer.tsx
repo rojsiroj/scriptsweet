@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="w-full bg-white border-t-2 border-[#2A5C6A] pt-16 pb-8 font-body mt-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-16">
-          
+
           <div className="max-w-sm">
             <ScriptsweetLogo className="mb-6 scale-90 origin-left" />
             <p className="text-[#2A5C6A] font-bold text-lg mb-2">
@@ -23,7 +23,6 @@ export function Footer() {
               <h4 className="font-heading font-extrabold text-[#2A5C6A] text-lg uppercase tracking-wide">Platform</h4>
               <Link href="#features" className="text-[#2A5C6A] hover:text-[#EE76AE] font-semibold transition-colors">Features</Link>
               <Link href="#sandbox" className="text-[#2A5C6A] hover:text-[#EE76AE] font-semibold transition-colors">Sandbox</Link>
-              <Link href="#pricing" className="text-[#2A5C6A] hover:text-[#EE76AE] font-semibold transition-colors">Pricing</Link>
             </div>
             <div className="flex flex-col gap-4">
               <h4 className="font-heading font-extrabold text-[#2A5C6A] text-lg uppercase tracking-wide">Company</h4>
@@ -32,9 +31,9 @@ export function Footer() {
               <Link href="/contact" className="text-[#2A5C6A] hover:text-[#EE76AE] font-semibold transition-colors">Contact</Link>
             </div>
           </div>
-          
+
         </div>
-        
+
         <div className="pt-8 border-t-2 border-[#2A5C6A] flex flex-col md:flex-row items-center justify-between gap-4 text-sm font-bold text-[#2A5C6A]/60">
           <p>© 2026 Scriptsweet.net. All rights reserved.</p>
           <div className="flex gap-6">
